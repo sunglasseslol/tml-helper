@@ -69,6 +69,19 @@ The extension comes with these default templates:
 - **ModItem** - Basic ModItem template with SetDefaults and AddRecipes
 - **ModNPC** - Basic ModNPC template with SetDefaults and SpawnChance
 - **ModProjectile** - Basic ModProjectile template with SetDefaults and AI
+- **ModBuff** - Basic ModBuff template with SetStaticDefaults and Update
+- **ModTile** - Basic ModTile template with SetStaticDefaults and NumDust
+- **ModWall** - Basic ModWall template with SetStaticDefaults
+- **ModDust** - Basic ModDust template with OnSpawn and Update
+- **ModPlayer** - Basic ModPlayer template with ResetEffects and UpdateEquips
+- **ModSystem** - Basic ModSystem template with Load, Unload, and PostUpdateEverything
+- **ModPrefix** - Basic ModPrefix template for weapon prefixes
+- **ModWhip** - Whip item template with DefaultToWhip and recipe setup
+- **ModWhipProjectile** - Whip projectile template with tag damage and drawing support
+- **ModTagBuff** - Tag buff template with GlobalNPC for tag damage application
+- **GlobalNPC** - GlobalNPC template for modifying all NPCs
+- **GlobalItem** - GlobalItem template for modifying all items
+- **GlobalProjectile** - GlobalProjectile template for modifying all projectiles
 
 ## Requirements
 

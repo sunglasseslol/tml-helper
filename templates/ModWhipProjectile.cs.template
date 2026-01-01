@@ -1,0 +1,45 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using ${Namespace}.Content.Buffs;
+
+namespace ${Namespace}.Content.Projectiles
+{
+	public class ${ClassName}Projectile : ModProjectile
+	{
+		public override void SetStaticDefaults()
+		{
+			ProjectileID.Sets.IsAWhip[Projectile.type] = true;
+		}
+
+		public override void SetDefaults()
+		{
+			Projectile.DefaultToWhip();
+		}
+
+		public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+		{
+			// Apply tag damage debuff
+			// target.AddBuff(ModContent.BuffType<${ClassName}Debuff>(), 240);
+			
+			// Apply other debuffs
+			// target.AddBuff(BuffID.Slow, 60);
+			
+			Main.player[Projectile.owner].MinionAttackTargetNPC = target.whoAmI;
+			Projectile.damage = (int)(Projectile.damage * 0.5f); // Multihit penalty
+		}
+
+		public override bool PreDraw(ref Color lightColor)
+		{
+			List<Vector2> list = new List<Vector2>();
+			Projectile.FillWhipControlPoints(Projectile, list);
+
+			// Use vanilla whip drawing
+			Main.DrawWhip_WhipBland(Projectile, list);
+			return false;
+		}
+	}
+}
+

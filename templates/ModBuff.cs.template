@@ -1,0 +1,22 @@
+using Terraria;
+using Terraria.ModLoader;
+
+namespace ${Namespace}
+{
+	public class ${ClassName} : ModBuff
+	{
+		public override void SetStaticDefaults()
+		{
+			// DisplayName.SetDefault("${ClassName}");
+			// Description.SetDefault("Your buff description here");
+			Main.buffNoTimeDisplay[Type] = false;
+			Main.debuff[Type] = false;
+		}
+
+		public override void Update(Player player, ref int buffIndex)
+		{
+			// Add your buff effects here
+		}
+	}
+}
+

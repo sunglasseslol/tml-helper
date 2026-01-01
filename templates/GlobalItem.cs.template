@@ -1,0 +1,29 @@
+using Terraria;
+using Terraria.ModLoader;
+
+namespace ${Namespace}.Content
+{
+	public class ${ClassName} : GlobalItem
+	{
+		public override void SetDefaults(Item item)
+		{
+			// Set defaults for all items
+		}
+
+		public override void ModifyWeaponDamage(Item item, Player player, ref StatModifier damage)
+		{
+			// Modify weapon damage
+		}
+
+		public override void ModifyWeaponCrit(Item item, Player player, ref float crit)
+		{
+			// Modify weapon crit chance
+		}
+
+		public override void ModifyWeaponKnockback(Item item, Player player, ref StatModifier knockback)
+		{
+			// Modify weapon knockback
+		}
+	}
+}
+

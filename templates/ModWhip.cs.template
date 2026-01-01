@@ -1,0 +1,24 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+using ${Namespace}.Content.Projectiles;
+
+namespace ${Namespace}.Content.Items.Whips
+{
+	public class ${ClassName} : ModItem
+	{
+		public override void SetDefaults()
+		{
+			Item.DefaultToWhip(ModContent.ProjectileType<${ClassName}Projectile>(), 20, 1.5f, 3f);
+		}
+
+		public override void AddRecipes()
+		{
+			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ItemID.Chain, 10);
+			recipe.AddTile(TileID.Anvils);
+			recipe.Register();
+		}
+	}
+}
+

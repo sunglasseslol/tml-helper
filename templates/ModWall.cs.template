@@ -1,0 +1,17 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace ${Namespace}
+{
+	public class ${ClassName} : ModWall
+	{
+		public override void SetStaticDefaults()
+		{
+			Main.wallHouse[Type] = true;
+			DustType = DustID.Stone;
+			AddMapEntry(new Microsoft.Xna.Framework.Color(100, 100, 100));
+		}
+	}
+}
+

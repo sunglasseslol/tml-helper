@@ -1,0 +1,29 @@
+using Terraria;
+using Terraria.ModLoader;
+
+namespace ${Namespace}
+{
+	public class ${ClassName} : ModPlayer
+	{
+		public override void ResetEffects()
+		{
+			// Reset your modded effects here
+		}
+
+		public override void UpdateEquips()
+		{
+			// Update equipment effects here
+		}
+
+		public override void OnHitNPC(Item item, NPC target, NPC.HitInfo hit, int damageDone)
+		{
+			// On hit with item
+		}
+
+		public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
+		{
+			// On hit with projectile
+		}
+	}
+}
+

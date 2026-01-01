@@ -1,0 +1,35 @@
+using Terraria;
+using Terraria.ModLoader;
+
+namespace ${Namespace}.Content
+{
+	public class ${ClassName} : GlobalProjectile
+	{
+		public override void SetDefaults(Projectile projectile)
+		{
+			// Set defaults for all projectiles
+		}
+
+		public override void OnHitNPC(Projectile projectile, NPC target, NPC.HitInfo hit, int damageDone)
+		{
+			// Called when projectile hits an NPC
+		}
+
+		public override void ModifyHitNPC(Projectile projectile, NPC target, ref NPC.HitModifiers modifiers)
+		{
+			// Modify damage dealt to NPC
+		}
+
+		public override bool PreAI(Projectile projectile)
+		{
+			// Called before AI update
+			return true;
+		}
+
+		public override void AI(Projectile projectile)
+		{
+			// Called during AI update
+		}
+	}
+}
+

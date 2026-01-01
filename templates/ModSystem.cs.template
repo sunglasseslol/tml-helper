@@ -1,0 +1,24 @@
+using Terraria;
+using Terraria.ModLoader;
+
+namespace ${Namespace}
+{
+	public class ${ClassName} : ModSystem
+	{
+		public override void Load()
+		{
+			// Called when mod loads
+		}
+
+		public override void Unload()
+		{
+			// Called when mod unloads
+		}
+
+		public override void PostUpdateEverything()
+		{
+			// Called after everything updates
+		}
+	}
+}
+
